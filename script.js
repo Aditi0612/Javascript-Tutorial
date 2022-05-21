@@ -108,6 +108,19 @@ var w=avg(2,4);
 console.log(w);
 
 //7. Conditional Statement in Javascript
+var age=34;
+if(age>8)
+{
+    console.log("You are not a kid");
+}
+else
+{
+    console.log("You are a kid");
+}
+//if, else if, if else if ladder all are valid
+
+
+//8. Loops in Javascript
 
 
 
