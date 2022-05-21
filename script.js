@@ -154,3 +154,42 @@ while(j<10)
 
 
 //9. Array Methods
+let brr=["fan","camera",8,null,true];
+console.log(brr.length);
+
+//remove last element
+brr.pop();
+console.log(brr);
+
+//add into array
+brr.push(12);
+
+//remove first element
+brr.shift();
+
+
+//insert at start
+brr.unshift("Aditi");
+
+//sorts the array ----->by default it converts into string and then sorts
+brr.sort();
+
+
+//10. String methods in javascript
+let s="Aditi is a good good girl";
+console.log(s.length);
+console.log(s.indexOf("Aditi")); //return 0
+console.log(s.indexOf("good")); //return 11----->returns first occurence
+console.log(s.lastIndexOf("good"));
+
+console.log(s.slice(0,5)); //0 is inclusive & 5 is exclusive...kind of substring
+let d=s.replace("Aditi","Komal");  //only first occurenece is replace
+console.log(s,d);
+
+
+
+//12. Javascript Dates
+let myDate=new Date();
+console.log(myDate);
+
+
