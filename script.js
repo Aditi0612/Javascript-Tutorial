@@ -133,4 +133,24 @@ arr.forEach(function(element)
    console.log(element)
 })
 
+//let ka scope block level hota hai. New is let so use let
+let j=0;
+while(j<5)
+{
+    console.log(j);
+    j++;
+}
 
+while(j<10)
+{
+    if(j==7)
+    {
+        continue;
+    }
+    console.log(j);
+    j++;
+}
+
+
+
+//9. Array Methods
