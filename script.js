@@ -191,5 +191,66 @@ console.log(s,d);
 //12. Javascript Dates
 let myDate=new Date();
 console.log(myDate);
+console.log(myDate.getFullYear()); //2022
+console.log(myDate.getDay());
+console.log(myDate.getMinutes());
+console.log(myDate.getTime());
+
+//new is used to make new date
 
 
+//13. DOM Manupulation
+//Any visible document is DOM
+
+let elem=document.getElementById('click');//when element is targeted by its identifier
+console.log(elem);
+
+let eclass=document.getElementsByClassName('container');
+console.log(eclass);
+
+//change CSS by targeting element by its id/class name 
+//eclass[0].style.background="yellow";
+
+
+//add class
+eclass[0].classList.add("bg-primary");
+
+//remove class
+eclass[0].classList.remove("bg-primary");
+
+//acces inner html
+console.log(eclass[0].innerHTML);
+
+//access inner text
+console.log(eclass[0].innerText);
+
+let tn=document.getElementsByTagName('div');
+console.log(tn);
+
+//inject a new element in an existing element
+createdElement=document.createElement('p');
+createdElement.innerText="This is a new para";
+tn[0].appendChild(createdElement);
+
+//check remove element also
+
+
+//Selection using query--->same as CSS selectors
+sel=document.querySelector('.container');
+console.log(sel);
+
+//onclick----jab aap ispe click kro tab kya ho
+function clicked()
+{
+    console.log("The button was clicked");
+}
+window.onload=function()  //if docs load ye kr do
+{
+   console.log("The document was loaded");
+}
+
+
+//Events in Javascript----Jo cheeze ho rahi hai woh events hai
+firstContainer.addEventListener('click',function(){
+    console.log("clicked on button");
+})
