@@ -254,3 +254,69 @@ window.onload=function()  //if docs load ye kr do
 firstContainer.addEventListener('click',function(){
     console.log("clicked on button");
 })
+
+
+firstContainer.addEventListener('mouseout', function(){
+    console.log('Mouse out of container');
+})
+
+firstContainer.addEventListener('mouseover', function(){
+    console.log("Mouse on container");
+})
+
+
+//15. Arrow Function----To insert a func in between codes
+
+traditional function
+function sum(a,b)
+{
+    return a+b;
+}
+
+//Arrow function
+summ = (a,b)=>{
+    return a+b;
+}
+*/
+
+//16. set time out and set interval
+logKaro = ()=>{
+   // console.log("I am your log");
+}
+
+//setTimeout(logKaro, 2000); //argument---{function, time interval} i.e this 
+//funct runs after that time interval
+
+
+//setinterval for repetidely
+//let a=setInterval(logKaro,2000);
+
+//clearInterval----to stop set interval using 'a' i.e id of setInterval
+
+
+//17. Local storage in Javascript
+//hepls save data in user system as a string
+
+/*
+localStorage.setItem('name', 'Aditi')
+localStorage
+Storage {name: 'Aditi', length: 1}
+
+//To remove any particular item
+localStorage.removeItem('name');
+
+//To clear entire local Storage
+localStorage.clear();
+*/
+
+
+//18. JSON - Javascript Open Notataion
+//It is data exchange format
+//Json can be converted into string and then back to JS object
+//json only supports double quotes
+obj ={name: "Aditi", length: 1 , a:{this: "that"}};
+jso= JSON.stringify(obj);
+//console.log(jso);
+//console.log(typeof jso);
+parsed=JSON.parse(`{"name":"Aditi","length":1,"a":{"this":"that"}}`);
+console.log(parsed);
